@@ -57,13 +57,12 @@
         margin-left: calc(-1300px * 2);
     }
 }
-
 .slideshow {
     overflow: hidden;
     height: auto;
     width: 1300px;
     margin: 0 auto;
-    top: 200px;
+    margin-top: 160px;
 }
 .slides {
     float: left;
@@ -97,6 +96,7 @@ footer {
     border: solid rgb(0, 0, 0) 1px;
     border-radius: 25px;
     padding: 5px 10px;
+    box-shadow: 5px 5px 5px #999896;
 }
 .product-info:hover {
     font-size: larger;
