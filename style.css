@@ -1,0 +1,109 @@
+@font-face {
+    font-family: TheSeasons;
+    src: url("font/Fontspring-DEMO-theseasons-reg.otf") format("opentype");
+}
+@font-face {
+    font-famiy: TheSeasons;
+    font-weight: bold;
+    src: url("font/Fontspring-DEMO-theseasons-bd.otf") format("opentype")
+}
+
+* {
+    background-color: #ebdbc5;
+    font-family: TheSeasons;
+}
+.logo > img {
+    width: 30%;
+}
+.sidebar {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2em;
+    gap: 20px;
+}
+.search-input {
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 50px;
+    padding: 15px;
+}
+.search-input:focus {
+    background-color: #dfc8a9;
+    opacity: 0.5;
+}
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #ebdbc5;
+    top: 0;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+} 
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-1300px * 1);
+    }
+
+    60% {
+        margin-left: calc(-1300px * 2);
+    }
+}
+
+.slideshow {
+    overflow: hidden;
+    height: auto;
+    width: 1300px;
+    margin: 0 auto;
+    top: 200px;
+}
+.slides {
+    float: left;
+    height: auto;
+    width: 1300px;
+}
+#chair {
+    height: 731px !important;
+}
+.slides-group {
+    width: calc(1300px * 3);
+    animation: slide 20s ease infinite;
+}
+article.product > img {
+    height: 500px;
+}
+.product {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 15px 5px 0 5px;
+    width: 100%;
+}
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.product-info {
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+.product-info:hover {
+    font-size: larger;
+}
+.text {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    font-size: larger;
+}
