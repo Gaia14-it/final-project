@@ -3,7 +3,7 @@
     src: url("font/Fontspring-DEMO-theseasons-reg.otf") format("opentype");
 }
 @font-face {
-    font-famiy: TheSeasons;
+    @font-face.font-famiy: TheSeasons;
     font-weight: bold;
     src: url("font/Fontspring-DEMO-theseasons-bd.otf") format("opentype")
 }
@@ -103,7 +103,7 @@ footer {
 }
 .text {
     display: flex;
-    flex: row nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
     font-size: larger;
 }
